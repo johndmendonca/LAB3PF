@@ -7,7 +7,6 @@ The directory structure should look like this:
 LAB3/
   |-- age/
   	|-- lib/
-  	|-- extract_feat.py
   	|-- run_baseline_students.py
   	|-- ...
   |-- sre/
@@ -15,4 +14,6 @@ LAB3/
   |-- data
     |-- IS10_paralingChal_AGENDER/
     |-- vox_pt/
+  |-- tools
+    |-- extract_feat.py
 ```
