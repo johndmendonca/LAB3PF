@@ -10,7 +10,8 @@ LAB3/
   	|-- run_baseline_students.py
   	|-- ...
   |-- sre/
-  	|-- ...
+  	|-- metrics.py
+    |-- ...
   |-- data
     |-- IS10_paralingChal_AGENDER/
     |-- vox_pt/
