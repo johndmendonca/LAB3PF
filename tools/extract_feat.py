@@ -19,7 +19,7 @@ def get_files(file_fp):
     if len(relative_path) > 1:
     	relative_path = '/'.join(file_fp.split('/')[:-1])+'/'
     else:
-    	relative_path = None
+    	relative_path = ''
 	
     with open(file_fp,'r') as f:
         for fline in f:
