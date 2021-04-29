@@ -1,5 +1,7 @@
 import torch
 
+
+def minDCF(positive_scores, negative_scores, c_miss=1.0, c_fa=1.0, p_target=0.01):
     """Computes the minDCF metric normally used to evaluate speaker verification
     systems. The min_DCF is the minimum of the following C_det function computed
     within the defined threshold range:
@@ -53,7 +55,7 @@ import torch
 
     return float(c_min), float(thresholds[min_index])
     
-def EER(positive_scores, negative_scores):
+ def EER(positive_scores, negative_scores):
     """Computes the EER (and its threshold).
     Arguments
     ---------
