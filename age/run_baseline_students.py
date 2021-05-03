@@ -21,16 +21,7 @@ torch.manual_seed(1234)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 def run_svr(train_files, devel_files, test_files, feature_set):
-'''
-	 For the functions load_data() to work correctly:
-		- data_files should be a size 3 array with the path of the data file for the Training, Development and Test sets.
-		- label_files should be a size 2 array with the path of the label file for the Training and Development sets.
-		- Each data file should contain a matrix with shape (N_samples, N_features), with semicolon separated values.
-		- Each label file should contain 2 columns, separated with a comma. One column should contain the id of the speaker
-		  and the second sould contain the label (0 or 1). The header corresponding to these two columns should be file_id,
-		  label. The file may contain other columns, but those will be ignored.
-	'''
-
+	
 	# Load data and labels
 	X_train, y_train, _ = load_data(train_files)
 	X_devel, y_devel, _ = load_data(devel_files)
