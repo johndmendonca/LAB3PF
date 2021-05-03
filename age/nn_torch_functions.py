@@ -66,7 +66,6 @@ class FeedforwardNetwork(nn.Module):
 			self, n_features, dropout, **kwargs):
 		'''
 		This function initializes the network. It defines its architecture.
-			- n_classes (int): number of classes. In this problem it will be 2
 			- n_features (int): number of features
 			- dropout (float): dropout probability
 		'''
