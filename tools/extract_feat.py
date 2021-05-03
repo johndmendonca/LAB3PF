@@ -76,7 +76,7 @@ def get_feat_xvector(file_in, csv, header=False):
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='Process captions file.')
+    parser = argparse.ArgumentParser(description='Process file.')
 
     parser.add_argument('--file','-f',required=True,help='file list')
     parser.add_argument('--out','-o',required=True,help='output feature file')
