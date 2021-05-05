@@ -7,6 +7,7 @@ The directory structure should look like this:
 LAB3/
   |-- age/
   	|-- lib/
+      |-- tools.py
   	|-- run_baseline_students.py
   	|-- ...
   |-- sre/
